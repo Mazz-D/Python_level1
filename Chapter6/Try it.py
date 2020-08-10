@@ -1,10 +1,11 @@
+"""
 #in dictionary, there are these methods:
 #items() to sort through the whole items
 #keys() to check for the key values
 #values() to loop through and check values
 #set() function to make sure there aren't repitition in a large list
 #sorted() to arrange them
-"""
+
 #6-5
 rivers = {
     "nile": "egypt",
@@ -37,7 +38,6 @@ for name in favorite_languages.keys():
         print(f"Thank you {name.title()} for responding")
     else:
         print(f"{name.title()} please, make sure to take the poll")
-"""
 
 #6-7
 #this is how to dictonaries are used in a list
@@ -101,3 +101,4 @@ for animal in pets:
 favorite_places = {
     
 }
+"""

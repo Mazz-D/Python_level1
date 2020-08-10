@@ -1,3 +1,4 @@
+""""
 #A simple dictionary---alien.py
 
 #alien_0 = {"color": "green", "points": 5}
@@ -7,14 +8,13 @@
 #print(alien_0)
 
 #An Empty Dictionary
-
 #alien_0 = {}
 
 #alien_0["color"] = "green"
 #alien_0["points"] = 5
 
 #print(alien_0)
-"""
+
 #modifying a dictionary
 alien_0 = {"color": "green"}
 #print("The alien is " + alien_0["color"] + ".")
@@ -103,11 +103,11 @@ for name, favNumber in people_favorite_numbers.items():
 #for key, value in user_0.items():
     #print("\nKey: " + key)
     #print("Value: " + value)
-"""
+
 #NESTING
 #A List of dictionaries
 #ALIENS.PY
-"""
+
 alien_0 = {"color": "green", "points": 5}
 alien_1 = {"color": "yellow", "points": 10}
 alien_2 = {"color": "red", "points": 15}
@@ -161,7 +161,7 @@ for name, languages in favorite_languages.items():
         print(f"{name.title()} total languages are {len(languages)}")
     for language in languages:
         print("\t" + language.title())
-"""
+
 #A dictionary in a dictionary
 
 users = {
@@ -184,3 +184,4 @@ for username, user_info in users.items():
 
     print("\tFull name: " + full_name.title())
     print(f"\tLocation: {location.title()}")
+"""
