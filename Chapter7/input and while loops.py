@@ -95,7 +95,7 @@ print(pets)
 while "cat" in pets:
     pets.remove("cat")
 print(pets)
-"""
+
 #Filling a dictionary with user input
 responses = {}
 
@@ -114,3 +114,5 @@ while polling_active:
 print("\n--- Poll Results ---")
 for name, response in responses.items():
     print(name + " would like to climb " + response + ".")
+
+"""
