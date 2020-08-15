@@ -27,10 +27,48 @@ make_shirt()
 make_shirt(shirt_size="M")
 make_shirt(shirt_size="XL", shirt_text="Pyhthon is awesome")
 
-#Cities:
+#8-5 Cities:
 def describe_cities(city_name, country="Nigeria"):
     print(f"\n{city_name.title()} is in {country.title()}")
 describe_cities(city_name="Lagos")
 describe_cities(city_name="Atlanta", country="America")
 describe_cities(city_name="benin")
+
+#City names:
+def city_country(city, country):
+    city_country = f"{city},{country}"
+    return city_country.title()
+
+location = city_country("agege", "lagos")
+print(location)
+location_2 = city_country("jos", "pleatue")
+print(location_2)
+
+#8-7 Album:
+def make_album(artist_name, artist_album, album_tracks="", genre=""):
+    artist = {"artist": artist_name, "album": artist_album}
+    if album_tracks:
+        artist["tracks"] = album_tracks
+    if genre:
+        artist["genre"] = genre
+    return artist
+musician = make_album("jimi hendrix", "flower", album_tracks= 20, genre="rock")
+print(musician)
 """
+#8-8 user albums:--- revisit later
+def make_album(artist_name, artist_album):
+    artist = f"Artist Name: {artist_name} \nArtistalbum: {artist_album}"
+    return artist.title()
+while True:
+    print("\nPlease an album artist: ")
+    print("Enter album title: ")
+    print("\nEnter 'q' when done")
+        
+    artist_name = input("Artist name: ")
+    if artist_name == "q":
+        break
+    artist_album = input("Artist album: ")
+    if artist_album == "q":
+        break
+artist = make_album(artist_name, artist_album)
+print(artist)
