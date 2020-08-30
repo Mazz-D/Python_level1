@@ -2,3 +2,5 @@
 .vscode
 PythonCrashCourse
 venv
+Chapter8/Try it.py
+__pycache__

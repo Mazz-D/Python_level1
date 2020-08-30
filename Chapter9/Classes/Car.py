@@ -20,7 +20,7 @@ class Car():
 
     def increment_odometer(self, miles): #incrementing an attribute value through a method
         self.odometer_reading += miles
-    
+"""    
 my_used_car = Car("audi", "q7", 2017)
 print(my_used_car.descriptive_name())
 
@@ -29,3 +29,4 @@ my_used_car.read_odometer()
 
 my_used_car.increment_odometer(500)
 my_used_car.read_odometer()
+"""
