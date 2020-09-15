@@ -1,3 +1,4 @@
+"""
 class Car():
     def __init__(self, make, model, year):
         self.make = make
@@ -43,9 +44,9 @@ class ElectricCar(Car):
     def __init__(self, make, model, year):
         super().__init__(make, model, year)
         self.battery = Battery()
-"""    
+   
 my_used_car = Car("audi", "q7", 2017)
-print(my_used_car.descriptive_name())
+print(my_used_car.get_descriptive_name())
 
 my_used_car.update_odometer(24000)
 my_used_car.read_odometer()
