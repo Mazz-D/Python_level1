@@ -5,7 +5,7 @@ class Car():
         self.year = year
         self.odometer_reading = 0 #setting a default value
 
-    def descriptive_name(self):
+    def get_descriptive_name(self):
         long_name = f"{str(self.year)} {self.make} {self.model}"
         return long_name.title()
     
@@ -20,6 +20,29 @@ class Car():
 
     def increment_odometer(self, miles): #incrementing an attribute value through a method
         self.odometer_reading += miles
+
+class Battery():
+    def __init__(self, battery_size=70):
+        self.battery_size = battery_size
+    
+    def describe_battery(self):
+        print(f"This car has a {str(self.battery_size)}-kWh battery")
+
+    def get_range(self):
+        if self.battery_size ==70:
+            range = 240
+        elif self.battery_size == 85:
+            range = 270
+
+        message = f"This car can go approximately {str(range)}"
+        message += f" miles on full charge."
+        print(message)
+
+
+class ElectricCar(Car):
+    def __init__(self, make, model, year):
+        super().__init__(make, model, year)
+        self.battery = Battery()
 """    
 my_used_car = Car("audi", "q7", 2017)
 print(my_used_car.descriptive_name())
